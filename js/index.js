@@ -86,3 +86,13 @@ content[4].textContent = siteContent['main-content']['vision-content'];
 let middleImage = document.getElementById('middle-img');
 
 middleImage.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+// Contact Section
+
+// header
+header[5].textContent = siteContent.contact['contact-h4'];
+
+ // paragraphs
+content[5].textContent = siteContent.contact.address;
+content[6].textContent = siteContent.contact.phone;
+content[7].textContent = siteContent.contact.email;
