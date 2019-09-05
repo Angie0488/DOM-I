@@ -52,11 +52,33 @@ navigation.forEach((link, index) => {
   link.textContent = siteContent.nav[`nav-item-${index++}`];
 }); 
 
+// Task 3
+for (let i = 0; i < navigation.length; i++) {
+  let navColor = navigation[i];
+  navColor.style.color = 'green';
+};
+
+ // appendChild
+let newChild = document.createElement('a');
+newChild.href = '#';
+newChild.textContent = 'Contact';
+
+ let navBar = document.querySelector('nav');
+navBar.appendChild(newChild);
+
+ // prepend
+let anotherNewChild = document.createElement('a');
+anotherNewChild.href = '#';
+anotherNewChild.textContent = 'Home';
+
+ navBar.prepend(anotherNewChild);
+
 // CTA Section
 
 let firstHeader = document.querySelector('h1');
 firstHeader.textContent = siteContent.cta.h1;
-
+firstHeader.style.color = "blue";
+firstHeader.style.fontSize = '6rem';
  let button = document.querySelector('button');
 button.textContent = siteContent.cta.button;
 
