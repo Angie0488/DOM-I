@@ -46,7 +46,19 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 // MY CODE HERE
 
 // Navigation Section
+
 const navigation = document.querySelectorAll('nav a');
 navigation.forEach((link, index) => {
   link.textContent = siteContent.nav[`nav-item-${index++}`];
 }); 
+
+// cta Section
+
+let firstHeader = document.querySelector('h1');
+firstHeader.textContent = siteContent.cta.h1;
+
+ let button = document.querySelector('button');
+button.textContent = siteContent.cta.button;
+
+let ctaImg = document.getElementById('cta-img');
+ctaImg.setAttribute('src', siteContent.cta['img-src']);
